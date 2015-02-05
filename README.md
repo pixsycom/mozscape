@@ -1,11 +1,12 @@
 # MOZ Mozscape API Library
 
 Node-mozscape is a node.js module for asynchronously communicating with the
-[MOZ Mozscape APIs](http://moz.com/products/api). 
+[MOZ Mozscape APIs](http://moz.com/products/api).
 
-## APIs It supports
-- url-metrics 
-- links 
+
+## APIs it supports
+- url-metrics
+- links
 - anchor-text
 - top-pages
 - metadata
@@ -37,7 +38,7 @@ Use [npm](http://npmjs.org/) to install node-mozscape
 
 ## Methods Available
 
-###urlMetrics
+### urlMetrics
 
     moz.urlMetrics(url, cols, callback)
 
@@ -49,7 +50,7 @@ back from the API. The function should accept 2 arguments in the following
 order: `error, result` where error will either be an object or null, and
 result will be an object containing the response from seoMOZ.
 
-###links
+### links
 
     moz.links(url, scope, options, callback)
 
@@ -65,7 +66,7 @@ result will be an object containing the response from seoMOZ.
 
 * `callback` Same as urlMetrics.
 
-###anchorText
+### anchorText
 
     moz.anchorText(url, scope, cols, callback)
 
@@ -74,7 +75,7 @@ result will be an object containing the response from seoMOZ.
 * `cols` Array of strings for the columns returned, see `Mozscape.ANCHOR_TEXT_FLAGS`
 * `callback` Same as urlMetrics.
 
-###topPages
+### topPages
 
     moz.topPages(url, cols, options, callback)
 
@@ -88,15 +89,41 @@ response (see `Mozscape.URL_METRICS_FLAGS`). Ex: `['title', 'url', 'links']`
 
 * `callback` Same as urlMetrics
 
-###metadata
+### metadata
 
     moz.metadata(option, callback)
 
 * `option` A string of any of the following:
 
-    * `last_update` 
+    * `last_update`
     * `next_update`
-    * `index_stats` 
+    * `index_stats`
 
 * `callback` Same as urlMetrics
 
+
+## License
+
+The MIT License
+
+Copyright (c) 2010 Michael Peterson
+Copyright (c) 2014 Scott Wyatt
+Copyright (c) 2015 Christopher Brown
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.

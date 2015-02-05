@@ -1,17 +1,14 @@
 {
   "name": "mozscape",
-  "description": "A node.js client for the Mozscape API",
   "version": "0.1.1",
+  "description": "A node.js client for the Mozscape API",
   "author": "Scott Wyatt",
-  "main": "lib/mozscape.js",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/scott-wyatt/node-mozscape.git"
-  },
-  "engines": {
-    "node": ">= 0.8.0"
+    "url": "http://github.com/chbrown/mozscape.git"
   },
   "dependencies": {
-    "request": "^2.42.0"
+    "request": "*"
   }
 }
