@@ -214,13 +214,19 @@ var URL_METRICS_FLAGS = exports.URL_METRICS_FLAGS = {
   'domain_external_juice'         : 4194304,
   'subdomain_domain_juice'        : 8388608,
   'domain_domain_juice'           : 16777216,
-  'canonical_url'                 : 268435456,
-  'http_status'                   : 536870912,
+  'subdomain_spam_score'          : 67108864,
+  'social'                        : 134217728,
+  'http_status_code'              : 536870912,
   'subdomain_links'               : 4294967296,
   'domain_links'                  : 8589934592,
   'domains_linking_to_subdomain'  : 17179869184,
   'page_authority'                : 34359738368,
-  'domain_authority'              : 68719476736
+  'domain_authority'              : 68719476736,
+  'external_links'                : 549755813888,
+  'external_linking_to_subdomain' : 140737488355328,
+  'external_linking_to_rootdomain': 2251799813685248,
+  'linking_c_block'               : 36028797018963968,
+  'time_last_crawled'             : 144115188075855872,
 };
 
 /**
